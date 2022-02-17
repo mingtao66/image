@@ -1,0 +1,28 @@
+aly:
+  auth:
+    # 阿里云密钥 在https://ram.console.aliyun.com/manage/ak页面生成
+    key:
+    secret:
+  oss:
+    endpoint: oss-cn-shanghai.aliyuncs.com
+    #修改为自己的oss域名
+    domain: https://mepic.oss-cn-shanghai.aliyuncs.com/
+    #修改为自己的oss bucket 名称
+    bucket: mepic
+  image:
+    endpoint: imageseg.cn-shanghai.aliyuncs.com
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: image-service
+  aop:
+    auto: true
+    proxy-target-class: true
+
+logging:
+  config: classpath:log4j2.xml
+
+
